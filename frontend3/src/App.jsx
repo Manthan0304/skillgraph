@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Courses from "./pages/Courses";
+import CourseDetail from "./pages/CourseDetail";
 import Contact from "./pages/Contact";
 import AddCourse from "./pages/AddCourse";
 import { ThemeProvider } from "./components/ThemeContext";
@@ -21,6 +22,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/courses" element={<Courses />} />
+              <Route path="/courses/:id" element={<CourseDetail />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/add-course" element={<AddCourse />} />
             </Routes>
